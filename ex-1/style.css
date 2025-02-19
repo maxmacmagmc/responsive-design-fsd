@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body {
+  
+}
 
 .topic {
   display: flex;
@@ -167,4 +170,45 @@ h3 {
   left: 0px;
 }
 
-/* Start coding here */
+/* ตั้งค่าให้ job categories เรียงเป็นแนวตั้งในมือถือ */
+@media (max-width: 768px) {
+  .categories {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .row-1, .row-2 {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .job-item {
+    width: 90%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .job-more {
+    width: 90%;
+    text-align: center;
+  }
+
+  .topic {
+    text-align: center;
+  }
+
+  .topic h1 {
+    font-size: 24px;
+  }
+
+  .arrow {
+   left: 320px;
+  } 
+    
+}
